@@ -1,2 +1,3 @@
 # dsasko.github.io
-Personal website
+
+Personal website / CV built with Jekyll.

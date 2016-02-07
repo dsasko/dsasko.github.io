@@ -156,6 +156,10 @@
 			padding-left: 16px;
 			background: url(/img/ul-bullet.gif) no-repeat left 10px;
 
+			@include media(">=medium") {
+				background-position: left 9px;
+			}
+
 			&:first-child {
 				margin-top: 0;
 			}
