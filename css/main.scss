@@ -1,0 +1,38 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Our variables
+$base-font-family: "LatoLatinWeb", sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #2d2d2d;
+$background-color: #fefefe;
+$brand-color:      royalblue;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1200px;
+
+$breakpoints: (small: 320px, medium: 768px, large: 1100px);
+$br-desktop: ("height>=600px", ">=1024px");
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+    "syntax-highlighting",
+    "include-media",
+    "fonts",
+    "base",
+    "layout"
+;
