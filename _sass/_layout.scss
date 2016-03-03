@@ -2,14 +2,10 @@
 
 .main--left {
 
-	
 	z-index: 2;
 	position: relative;
-	background: royalblue;
+	background: $brand-color;
 	text-align: center;
-
-	// background: linear-gradient(73deg, darkorchid, royalblue);
-	// background-size: 200% 500%;
 
 	@include media(">=large") {
 		position: fixed;
@@ -167,6 +163,10 @@
 		}
 	}
 
+	span.http {
+		color: $brand-color;
+	}
+
 	*:first-child { margin-top: 0; }
 	*:last-child { margin-bottom: 0; }
 }
@@ -184,7 +184,7 @@
 			font-weight: bold;
 
 			.at {
-				color: royalblue;
+				color: $brand-color;
 			}
 		}
 
