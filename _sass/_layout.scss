@@ -167,6 +167,11 @@
 		color: $brand-color;
 	}
 
+	span.love {
+		color: firebrick;
+		font-size: 0.8em;
+	}
+
 	*:first-child { margin-top: 0; }
 	*:last-child { margin-bottom: 0; }
 }

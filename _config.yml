@@ -15,6 +15,9 @@ url: "/" # the base hostname & protocol for your site
 # Analytics code
 google_analytics: UA-32511662-2
 
+# Domain name
+domain: dsasko.github.io
+
 # Social media
 github_username: dsasko
 linkedin_username: dsasko
