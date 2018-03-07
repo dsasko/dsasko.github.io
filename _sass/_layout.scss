@@ -1,7 +1,4 @@
-@import "include-media";
-
 .main--left {
-
 	z-index: 2;
 	position: relative;
 	background: $brand-color;
@@ -21,8 +18,9 @@
 
 		.td {
 			padding: 40px 14px;
+
 			@include media(">=large") {
-				padding: 40px;
+				padding: 60px;
 			}
 		}
 	}
@@ -52,6 +50,7 @@
 		font-weight: normal;
 		font-family: "LatoLatinWebLight";
 		line-height: 30px;
+		opacity: .8;
 
 		@include media(">=large") {
 			font-size: 24px;
@@ -60,7 +59,6 @@
 	}
 
 	.pages {
-
 		color: #6b8cf0;
 		font-size: 14px;
 		line-height: 24px;
@@ -73,6 +71,10 @@
 		a {
 			color: #fff;
 			font-family: "LatoLatinWebLight";
+
+			&:hover {
+
+			}
 		}
 	}
 }
@@ -88,7 +90,7 @@
 	@include media(">=large") {
 		left: 50%;
 		width: 50%;
-		padding: 40px;
+		padding: 60px;
 		font-size: 18px;
 		line-height: 26px;
 	}
