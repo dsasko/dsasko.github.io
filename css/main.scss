@@ -30,7 +30,6 @@ $br-desktop: ("height>=600px", ">=1024px");
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-    "syntax-highlighting",
     "include-media",
     "fonts",
     "base",
