@@ -29,7 +29,7 @@
 		color: #fff;
 		font-size: 40px;
 		font-weight: normal;
-		font-family: "LatoLatinWebHeavy";
+		font-family: "LatoLatinWebHeavy", sans-serif;
 		line-height: 40px;
 		margin-bottom: 0;
 
@@ -48,7 +48,7 @@
 		color: #fff;
 		font-size: 20px;
 		font-weight: normal;
-		font-family: "LatoLatinWebLight";
+		font-family: "LatoLatinWebLight", sans-serif;
 		line-height: 30px;
 		opacity: .8;
 
@@ -60,7 +60,7 @@
 
 	.pages {
 		color: #6b8cf0;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 24px;
 
 		@include media(">=large") {
@@ -70,7 +70,7 @@
 
 		a {
 			color: #fff;
-			font-family: "LatoLatinWebLight";
+			font-family: "LatoLatinWebLight", sans-serif;
 
 			&:hover {
 
@@ -96,10 +96,10 @@
 	}
 
 	h2 {
-
+		page-break-after: avoid;
 		font-size: 28px;
 		font-weight: normal;
-		font-family: "LatoLatinWebHeavy";
+		font-family: "LatoLatinWebHeavy", sans-serif;
 		line-height: 28px;
 		margin: 20px 0;
 
@@ -111,7 +111,7 @@
 
 		.bit {
 			color: #b2b2b2;
-			font-family: 'LatoLatinWeb';
+			font-family: 'LatoLatinWeb', sans-serif;
 
 			sup {
 				font-size: 0.6em;
@@ -126,21 +126,21 @@
 		dt, dd {
 			@include media(">=medium") {
 				float: left;
+				margin-top: 10px !important;
+
+				&:first-of-type {
+					margin-top: 0 !important;
+				}
 			}
 		}
 
 		dt {
-			margin-top: 20px;
+			margin-top: 10px;
 			font-weight: bold;
 
 			@include media(">=medium") {
 				clear: both;
-				margin-top: 0;
 				margin-right: 20px;
-			}
-
-			&:first-child {
-				margin-top: 0;
 			}
 		}
 	}
@@ -151,7 +151,7 @@
 		margin-left: 16px;
 
 		li {
-			margin-top: 20px;
+			margin-top: 10px;
 			padding-left: 16px;
 			background: url(/img/ul-bullet.gif) no-repeat left 10px;
 

@@ -1,0 +1,58 @@
+.print-only {
+    display: none;
+}
+
+@media print {
+
+    .print-only {
+        display: block;
+    }
+
+    html {
+
+        a {
+            color: $text-hover;
+            text-decoration: underline;
+        }
+
+        .main--left {
+            background: none;
+            position: static;
+            text-align: left;
+
+            .t .td {
+                padding-bottom: 0;
+            }
+
+            .title{
+                color: $text-color;
+            }
+
+            .subtitle {
+                font-family: $base-font-family;
+                color: $text-color;
+                opacity: 1;
+            }
+
+            .pages {
+                color: $text-color;
+
+                a {
+                    color: $text-hover;
+                    font-family: $base-font-family;
+                    text-decoration: none;
+
+                    &::after {
+                        color: mix($text-color, white, 33);
+                        content: ' (' attr(href) ')';
+                    }
+                }
+            }
+        }
+
+        .main--right {
+            position: static;
+            width: auto;
+        }
+    }
+}
