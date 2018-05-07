@@ -12,10 +12,6 @@ description: "Frontend developer from Zagreb, Croatia"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dsasko.github.io" # the base hostname & protocol for your site
 
-# PLugins
-plugins:
-  - spaceless
-
 # Analytics code
 google_tag_manager_id: GTM-MCC2FB3
 
