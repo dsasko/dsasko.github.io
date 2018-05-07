@@ -1,16 +1,26 @@
 <!DOCTYPE html>
+{% spaceless %}
 <html>
+<head>
+    {% include head.html %}
+</head>
+<body>
 
-	{% include head.html %}
+    JEKYLL_ENV: {{ jekyll.environment }}
 
-	<body>
+    {% if site.google_tag_manager_id and jekyll.environment == "production" %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager_id }}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
 
-		{% include header.html %}
+	{% include header.html %}
 
-		{{ content }}
+	{{ content }}
 
-		{% include footer.html %}
+	{% include footer.html %}
 
-	</body>
-
+{% endspaceless %}
+</body>
 </html>
