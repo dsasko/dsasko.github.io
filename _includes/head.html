@@ -7,13 +7,12 @@
 
 <!-- Theming -->
 <meta name="theme-color" content="#4169E1">
-<link rel="shortcut icon" href="/img/favicon.ico?v={{ version_id }}">
+<link rel="shortcut icon" href="/img/favicon.ico?v={{ site.version_id }}">
 
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-{% if site.google_tag_manager_id and jekyll.environment == "production" %}
+{%- if site.google_tag_manager_id and jekyll.environment == "production" -%}
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -21,5 +20,5 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','{{ site.google_tag_manager_id }}');</script>
 	<!-- End Google Tag Manager -->
-{% endif %}
+{%- endif -%}
 
