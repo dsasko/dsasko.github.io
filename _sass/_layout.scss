@@ -48,9 +48,7 @@
 		color: #fff;
 		font-size: 20px;
 		font-weight: normal;
-		font-family: "LatoLatinWebLight", sans-serif;
 		line-height: 30px;
-		opacity: .8;
 
 		@include media(">=large") {
 			font-size: 24px;
@@ -59,7 +57,6 @@
 	}
 
 	.pages {
-		color: #6b8cf0;
 		font-size: 16px;
 		line-height: 24px;
 
@@ -69,12 +66,33 @@
 		}
 
 		a {
+			position: relative;
 			color: #fff;
-			font-family: "LatoLatinWebLight", sans-serif;
 
-			&:hover {
-
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 2px;
+				background: #fff;
+				opacity: .6;
+				transition: width 80ms ease-in-out;
 			}
+
+			&:focus,
+			&:hover {
+				text-decoration: none;
+
+				&::after {
+					width: 0;
+				}
+			}
+		}
+
+		a + a {
+			margin-left: 20px;
 		}
 	}
 }
@@ -110,11 +128,12 @@
 		}
 
 		.bit {
-			color: #b2b2b2;
+			color: #767676;
 			font-family: 'LatoLatinWeb', sans-serif;
 
 			sup {
 				font-size: 0.6em;
+				font-family: "LatoLatinWebHeavy", sans-serif;
 			}
 		}
 	}
@@ -196,7 +215,7 @@
 		}
 
 		.when {
-			color: #858585;
+			color: #767676;
 			margin-bottom: 5px;
 		}
 	}
@@ -211,7 +230,7 @@ hr {
 }
 
 .copy {
-	color: #858585;
+	color: #767676;
 	font-size: 0.9em;
 	text-align: right;
 }
