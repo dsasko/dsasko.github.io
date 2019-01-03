@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#4169E1">
 <link rel="shortcut icon" href="/img/favicon.ico?v={{ site.version_id }}">
 
-<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ '/css/main.css' | append: '?v=' | append: site.version_id | prepend: site.baseurl }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
 {%- if site.google_tag_manager_id and jekyll.environment == "production" -%}
@@ -21,4 +21,3 @@
 	})(window,document,'script','dataLayer','{{ site.google_tag_manager_id }}');</script>
 	<!-- End Google Tag Manager -->
 {%- endif -%}
-
