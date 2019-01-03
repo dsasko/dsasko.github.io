@@ -69,16 +69,18 @@
 			position: relative;
 			color: #fff;
 
-			&::after {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				width: 100%;
-				height: 2px;
-				background: #fff;
-				opacity: .6;
-				transition: width 80ms ease-in-out;
+			@media not print {
+				&::after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					width: 100%;
+					height: 2px;
+					background: #fff;
+					opacity: .6;
+					transition: width 80ms ease-in-out;
+				}
 			}
 
 			&:focus,

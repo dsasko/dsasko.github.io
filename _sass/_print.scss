@@ -38,6 +38,9 @@
                 color: $text-color;
 
                 a {
+                    float: left;
+                    clear: left;
+                    margin-left: 0;
                     color: $text-hover;
                     font-family: $base-font-family;
                     text-decoration: none;
