@@ -1,11 +1,14 @@
-.print-only {
-    display: none;
+@media not print {
+
+    .print-only {
+        display: none;
+    }
 }
 
 @media print {
 
-    .print-only {
-        display: block;
+    .screen-only {
+        display: none;
     }
 
     html {
