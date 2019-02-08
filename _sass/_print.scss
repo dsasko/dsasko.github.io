@@ -13,6 +13,18 @@
 
     .pg-break {
         page-break-after: always;
+        visibility: hidden;
+    }
+
+    a.--url {
+
+        &::after {
+            color: mix($text-color, white, 60);
+            content: ' (' attr(href) ')';
+            display: inline-block;
+            text-decoration: none;
+            margin-left: 10px;
+        }
     }
 
     html {
@@ -50,12 +62,7 @@
                     margin-left: 0;
                     color: $text-hover;
                     font-family: $base-font-family;
-                    text-decoration: none;
-
-                    &::after {
-                        color: mix($text-color, white, 33);
-                        content: ' (' attr(href) ')';
-                    }
+                    text-decoration: underline;
                 }
             }
         }
