@@ -28,6 +28,11 @@ layout: default
 
 		<ul>
 			<li>
+				<a href="https://quattroruote.hr/" target="_blank" class="--url">Quattroruote.hr</a><br>
+				An online presence for an offline magazine.
+			</li>
+
+			<li>
 				<a href="https://www.bik-travel.com/" target="_blank" class="--url">Bik-travel.com</a><br>
 				Developed by yours truly. Designed by <a href="https://dribbble.com/JankoBertosa" target="_blank" rel="noopener noreferrer">Janko</a>.
 			</li>
@@ -72,13 +77,13 @@ layout: default
 
 		<hr class="pg-break"> <!-- -- -->
 
-		<h2>A byte<span class="bit">/<sup>8</sup></span> about me</h2>
+		<h2>A <span title="bit">byte<span class="bit">/<sup>8</sup></span></span> about me</h2>
 
 		<p>My first passion was design, but series of events led me to programming in which I fell in love with quickly. I strive to learn all I get my hands on so I'm no stranger to Backend technologies, Search Engine Optimisation, Server configuration, Network setup, etc.</p>
 
 		<p>Lately, I mostly spend my time building things in javascript and learning the structures of modern-day applications and frameworks. I also like to dig deep when it comes to performance, and paint time is somewhat of an obsession to me.</p>
 
-		<p>Things I enjoy include: Music (Rock, Electronic), Sports (Football, MMA), Video games (Dota<span class="love">❤</span>).</p>
+		<p>Things I enjoy include: Music (Rock, Electronic), Sports (Football, MMA), Video games (Dota <span class="love">❤</span>).</p>
 
 		<p>I'm currently working with <a href="http://www.silversurfer7.de/" target="_blank" rel="noopener noreferrer">Silverserver7 gmbh.</a> as a part of their Frontend team.</p>
 
@@ -97,7 +102,7 @@ layout: default
 			<dd>Križevci, Zagorska 103a, Croatia</dd>
 
 			<dt>Office address:</dt>
-			<dd>Zagreb, Babonićeva ul. 56, Croatia</dd>
+			<dd>Zagreb, Zagrebačka avenija 106, Croatia</dd>
 
 			<dt>Mobile phone:</dt>
 			<dd>(+385) 091/192-6677</dd>
@@ -113,38 +118,38 @@ layout: default
 		<div class="work__list">
 
 			<div class="item">
-				<div class="what">CEO, Frontend Developer <span class="at">@</span> Fenom ltd.</div>
+				<div class="what">CEO, Frontend Developer <span class="blue">@</span> Fenom ltd.</div>
 				<div class="when">Zagreb, Croatia [2017 - Present]</div>
-				<div class="desc">Working with awesome teams and helping them bring their ideas to life.</div>
+				<div class="desc">Helping people bring their ideas to life.</div>
 			</div>
 
 			<div class="item">
-				<div class="what">Senior Frontend Developer <span class="at">@</span> No42 ltd.</div>
+				<div class="what">Senior Frontend Developer <span class="blue">@</span> No42 ltd.</div>
 				<div class="when">Zagreb, Croatia [2016 - 2017]</div>
 				<div class="desc">Developing websites with focus on implementing new technologies and improving the build process.</div>
 			</div>
 
 			<div class="item">
-				<div class="what">Frontend Developer <span class="at">@</span> Nivas ltd.</div>
+				<div class="what">Frontend Developer <span class="blue">@</span> Nivas ltd.</div>
 				<div class="when">Zagreb, Croatia [2013 - 2016]</div>
 				<div class="desc">Building and maintaining various websites using new technologies and approaches but keeping in mind the less obedient browsers and their limitations.</div>
 			</div>
 
 			<div class="item">
-				<div class="what">Web developer <span class="at">@</span> Krikstudio</div>
+				<div class="what">Web developer <span class="blue">@</span> Krikstudio</div>
 				<div class="when">Zabreb, Croatia [2012]</div>
 				<div class="desc">Building and maintaining both static and Wordpress websites.</div>
 			</div>
 
 			<div class="item">
-				<div class="what">Web developer <span class="at">@</span> Unicolor</div>
+				<div class="what">Web developer <span class="blue">@</span> Unicolor</div>
 				<div class="when">Zagreb, Croatia [2010 - 2011]</div>
 				<div class="desc">Building and maintaining websites built around a custom CMS.</div>
 			</div>
 
 		</div>
 
-		<hr> <!-- -- -->
+		<hr class="pg-break"> <!-- -- -->
 
 		<h2>Education</h2>
 
@@ -163,7 +168,7 @@ layout: default
 			</li>
 		</ul>
 
-		<hr class="pg-break"> <!-- -- -->
+		<hr> <!-- -- -->
 
 		<h2>Certification</h2>
 
@@ -193,20 +198,25 @@ layout: default
 			</li>
 		</ul>
 
-		<hr> <!-- -- -->
+		<hr class="pg-break"> <!-- -- -->
 
 		<h2>Misc</h2>
 
 		<ul>
 			<li><strong>Editor of choice:</strong> VS Code</li>
-			<li><strong>OS of choice:</strong> OSX - High Sierra</li>
+			<li><strong>OS of choice:</strong> OSX - Big Sur</li>
 			<li><strong>Experience working on:</strong> Windows (>=3.11), Linux, OSX</li>
 			<li><strong>Driving:</strong> Active driver - B Category</li>
 		</ul>
 
 		<hr> <!-- -- -->
 
-		<p class="copy">Copyright {{ site.time | date: '%Y' }} &copy; {{ site.domain }}</p>
+		<p class="copy screen-only">Copyright {{ site.time | date: '%Y' }} <span class="blue">&copy;</span> {{ site.domain }}</p>
+
+		<p class="copy print-only">
+			This resume is a printed version of the <a href="{{ site.url }}" target="_blank">{{ site.domain }}</a> website.<br>
+			Resume generated on: <b>{{ site.time | date: '%Y/%m/%d' }}</b>
+		</p>
 
 	</div>
 
