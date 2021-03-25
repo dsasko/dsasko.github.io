@@ -12,11 +12,11 @@ description: "Frontend developer from Zagreb, Croatia"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dsasko.github.io" # the base hostname & protocol for your site
 
-# Analytics code
-google_tag_manager_id: GTM-MCC2FB3
-
 # Domain name
 domain: dsasko.github.io
+
+# Analytics code
+google_tag_manager_id: GTM-MCC2FB3
 
 # Social media
 github_username: dsasko
