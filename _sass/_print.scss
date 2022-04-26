@@ -6,7 +6,6 @@
 }
 
 @media print {
-
     .screen-only {
         display: none;
     }
@@ -31,7 +30,7 @@
 
         a {
             color: $text-hover;
-            text-decoration: underline;
+            text-decoration: underline solid $text-hover--print 1px;
         }
 
         .main--left {
@@ -62,7 +61,7 @@
                     margin-left: 0;
                     color: $text-hover;
                     font-family: $base-font-family;
-                    text-decoration: underline;
+                    text-decoration: underline solid $text-hover--print 1px;
                 }
             }
         }
@@ -70,6 +69,23 @@
         .main--right {
             position: static;
             width: auto;
+
+            dl {
+
+                dt, dd {
+                    float: left;
+                    margin-top: 10px !important;
+
+                    &:first-of-type {
+                        margin-top: 0 !important;
+                    }
+                }
+
+                dt {
+                    clear: both;
+                    margin-right: 20px;
+                }
+            }
         }
     }
 }

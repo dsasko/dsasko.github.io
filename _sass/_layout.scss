@@ -149,7 +149,7 @@
 		@extend %clearfix;
 
 		dt, dd {
-			@include media(">=medium") {
+			@include media(">=small") {
 				float: left;
 				margin-top: 10px !important;
 
@@ -163,7 +163,7 @@
 			margin-top: 10px;
 			font-weight: bold;
 
-			@include media(">=medium") {
+			@include media(">=small") {
 				clear: both;
 				margin-right: 20px;
 			}
@@ -188,6 +188,10 @@
 				margin-top: 0;
 			}
 		}
+	}
+
+	p + ul.connected {
+		margin-top: -6px;
 	}
 
 	span.http {

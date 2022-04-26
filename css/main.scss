@@ -17,6 +17,7 @@ $text-color:       #2d2d2d;
 $background-color: #fefefe;
 $brand-color:      royalblue;
 $text-hover:       mix($text-color, $brand-color, 33);
+$text-hover--print: rgba($text-hover, 0.3);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -25,7 +26,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    1200px;
 
-$breakpoints: (small: 320px, medium: 768px, large: 1100px);
+$breakpoints: (small: 640px, medium: 768px, large: 1100px);
 $br-desktop: ("height>=600px", ">=1024px");
 
 
