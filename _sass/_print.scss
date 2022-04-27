@@ -87,5 +87,12 @@
                 }
             }
         }
+
+        hr {
+            height: 0;
+            margin: 36px 0;
+            background: none;
+            border-bottom: 1px dotted #ccc;
+        }
     }
 }
