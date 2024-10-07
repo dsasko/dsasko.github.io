@@ -245,8 +245,18 @@ hr {
 	b {
 		font-size: 14px;
 	}
+	
+
 }
 
-.blue {
+.text-blue {
 	color: $brand-color;
+}
+
+.text-smaller {
+	font-size: 0.8em;
+}
+
+.text-larger {
+	font-size: 1.2em;
 }
