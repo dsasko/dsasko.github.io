@@ -4,7 +4,6 @@
 {% include head.html %}
 </head>
 <body>
-
 {%- if site.google_tag_manager_id and jekyll.environment == "production" -%}
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager_id }}"
@@ -14,5 +13,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 {{ content }}
 
+{% include scripts.html %}
 </body>
 </html>

@@ -1,0 +1,15 @@
+<script>
+    (function(){
+        const dateFormattingOptions = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        };
+
+        const currentDate = new Date();
+
+        document.querySelectorAll('[data-js="generated-on"]').forEach(elem => {
+            elem.innerHTML = currentDate.toLocaleDateString("en-US", dateFormattingOptions);
+        });
+    })();
+</script>
