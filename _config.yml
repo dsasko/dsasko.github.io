@@ -17,6 +17,7 @@ domain: dsasko.github.io
 
 # Analytics code
 google_tag_manager_id: GTM-MCC2FB3
+posthog_id: phc_VBCVbVd2xAPvf8NSpDEpkOG0QFJp2sGDUfHCOIcsqe2
 
 # Social media
 github_username: dsasko
