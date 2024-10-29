@@ -16,7 +16,6 @@
     }
 
     a.--url {
-
         &::after {
             color: mix($text-color, white, 60);
             content: ' (' attr(href) ')';
@@ -46,6 +45,7 @@
 
             .title{
                 color: $text-color;
+                margin-left: -2px; // Visually align title with left edge
             }
 
             .subtitle {
