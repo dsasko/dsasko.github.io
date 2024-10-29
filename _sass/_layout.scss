@@ -121,12 +121,12 @@
 		font-weight: normal;
 		font-family: "LatoLatinWebHeavy", sans-serif;
 		line-height: 28px;
-		margin: 20px 0;
+		margin: 30px 0 20px;
 
 		@include media(">=medium") {
 			font-size: 34px;
 			line-height: 34px;
-			margin: 26px 0;
+			margin: 36px 0 26px;
 		}
 
 		.bit {
@@ -171,14 +171,12 @@
 	}
 
 	ul {
-
 		list-style: none;
 		margin-left: 16px;
 
 		li {
 			margin-top: 10px;
 			padding-left: 16px;
-			position: relative;
 			background: url(/img/ul-bullet.gif) no-repeat left 10px;
 
 			@include media(">=medium") {
@@ -187,17 +185,6 @@
 
 			&:first-child {
 				margin-top: 0;
-			}
-
-			&::before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 10px;
-				left: 0;
-				height: 4px;
-				width: 4px;
-				background: url(/img/ul-bullet.gif) no-repeat;
 			}
 		}
 	}
@@ -245,8 +232,12 @@
 hr {
 	border: 0;
 	height: 4px;
-	margin: 36px 0;
 	background: url(/img/hr-background.png) repeat-x 0 0;
+	margin: 30px 0 0;
+
+	@include media(">=medium") {
+		margin: 36px 0 0;
+	}
 }
 
 .copy {
