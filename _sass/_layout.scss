@@ -81,14 +81,14 @@
 					opacity: .6;
 					transition: width 80ms ease-in-out;
 				}
-			}
 
-			&:focus,
-			&:hover {
-				text-decoration: none;
-
-				&::after {
-					width: 0;
+				&:focus,
+				&:hover {
+					text-decoration: none;
+	
+					&::after {
+						width: 0;
+					}
 				}
 			}
 		}
@@ -178,6 +178,7 @@
 		li {
 			margin-top: 10px;
 			padding-left: 16px;
+			position: relative;
 			background: url(/img/ul-bullet.gif) no-repeat left 10px;
 
 			@include media(">=medium") {
@@ -186,6 +187,17 @@
 
 			&:first-child {
 				margin-top: 0;
+			}
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 10px;
+				left: 0;
+				height: 4px;
+				width: 4px;
+				background: url(/img/ul-bullet.gif) no-repeat;
 			}
 		}
 	}

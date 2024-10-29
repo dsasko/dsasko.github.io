@@ -53,6 +53,9 @@
             }
 
             .pages {
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
                 color: $text-color;
 
                 a {
