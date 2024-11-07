@@ -4,3 +4,4 @@ _site
 .jekyll-cache
 *.afdesign
 vendor
+node_modules
