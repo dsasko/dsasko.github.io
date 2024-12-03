@@ -8,7 +8,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		right: 50%;
+		right: 60%;
 		bottom: 0;
 		text-align: right;
 	}
@@ -108,8 +108,8 @@
 	line-height: 24px;
 
 	@include media(">=large") {
-		left: 50%;
-		width: 50%;
+		left: 40%;
+		width: 60%;
 		padding: 60px;
 		font-size: 18px;
 		line-height: 26px;
@@ -225,8 +225,15 @@
 			color: #767676;
 			margin-bottom: 5px;
 		}
-	}
 
+		.responsibilities {
+			margin-top: 10px;
+
+			ul,li {
+				margin-top: 0;
+			}
+		}
+	}
 }
 
 hr {
@@ -256,4 +263,12 @@ hr {
 
 .text-larger {
 	font-size: 1.2em;
+}
+
+.tag {
+	display: inline-block;
+	padding: 0 8px;
+	border-radius: 5px;
+	font-size: 0.9em;
+	background: #d8def1;
 }
