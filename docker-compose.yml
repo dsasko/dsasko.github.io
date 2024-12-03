@@ -10,6 +10,5 @@ services:
         ruby --version
         && bundle --version
         && gem install bundler jekyll
-        && bundle add webrick
         && jekyll serve --force_polling --drafts
       "
