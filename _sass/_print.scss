@@ -42,6 +42,7 @@
             
             .flex {
                 flex-direction: row;
+                align-items: center;
                 padding-bottom: 0;
 
                 > * {
@@ -56,9 +57,10 @@
                 margin-bottom: 0;
             }
 
-            .title{
+            .title {
                 color: $text-color;
                 margin-left: -2px; // Visually align title with left edge
+                margin-top: 0;
             }
 
             .subtitle {
