@@ -253,10 +253,10 @@
 		.what {
 			font-weight: bold;
 			
-			&::before {
-				content: counter(work-item) ". ";
-				color: $brand-color;
-			}
+			// &::before {
+			// 	content: counter(work-item) ". ";
+			// 	color: $brand-color;
+			// }
 		}
 
 		.when {
@@ -273,7 +273,7 @@
 		}
 
 		.stack {
-			margin: 15px 0;
+			margin: 11px 0;
 			
 			.tag {
 				font-size: 0.9em;
