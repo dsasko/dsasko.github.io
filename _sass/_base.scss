@@ -248,3 +248,27 @@ pre {
  */
 .t { display: table; height: 100%; }
 .td { display: table-cell; vertical-align: middle; height: 100%; }
+
+
+/**
+ * Flex layout
+ */
+ .flex {
+    display: flex;
+
+    > * {
+        flex: 1;
+     }
+}
+
+.flex--vertical {
+    flex-direction: column;
+}
+
+.flex--align-center {
+    align-items: center;
+}
+
+.flex--justify-center {
+    justify-content: center;
+}

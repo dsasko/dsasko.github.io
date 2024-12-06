@@ -3,19 +3,23 @@ layout: default
 ---
 
 <div class="main main--left">
+	<div class="flex flex--vertical">
+		<div>
+			<div class="smiley-wrapper">
+				<img src="/img/smiley.jpeg" alt="Denis Šaško" class="smiley">
+			</div>
+		</div>
 
-	<div class="t">
-		<div class="td">
-
+		<div>
 			<h1 class="title">Denis Šaško</h1>
 			<h2 class="subtitle">Frontend developer from Zagreb, Croatia</h2>
 			<div class="pages">
 				<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" class="--url">Github</a>
 				<a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" class="--url">LinkedIn</a>
 			</div>
-
 		</div>
 	</div>
+	
 </div>
 
 <div class="main main--right">
@@ -29,7 +33,7 @@ layout: default
 		<ul>
 			<li>
 				<a href="https://productive.io/" target="_blank" class="--url">Productive.io</a><br>
-				Leading and developing features for one of the best Croatian startup unicorns
+				Leading and developing features for one of the best Croatian startups
 			</li>
 
 			<li>
@@ -152,9 +156,16 @@ layout: default
 		<div class="work__list">
 
 			<div class="item">
-				<div class="what">CEO <span class="text-blue">@</span> Fenom ltd.</div>
+				<div class="what">CEO, Frontend Developer <span class="text-blue">@</span> Fenom ltd.</div>
 				<div class="when">Zagreb, Croatia [2017 - Present]</div>
 				<div class="desc">Helping people bring their ideas to life.</div>
+				<div class="stack">Stack:
+					<span class="tag">Vue</span>
+					<span class="tag">React</span>
+					<span class="tag">Node</span>
+					<span class="tag">Strapi</span>
+					<span class="tag">Wordpress</span>
+				</div>
 			</div>
 
 			<div class="item">
@@ -168,13 +179,12 @@ layout: default
 						<li>Mentoring more junior team members</li>
 						<li>Reviewing requirements and documenting technical specifications</li>
 						<li>Providing time and complexity estimations</li>
-						<li>Grooming the backlog to prioritize tasks and features</li>
-						<li>Engaging in sprint planning meetings</li>
+						<li>Sprint planning and backlog triage</li>
 						<li>Leading feature development from conception to release</li>
 						<li>Conducting code reviews to ensure high quality and standards</li>	
 					</ul>
 				</div>
-				<div class="desc">Stack:
+				<div class="stack">Stack:
 					<span class="tag">Typescript</span>
 					<span class="tag">Ember</span>
 					<span class="tag">Node</span>
@@ -194,15 +204,14 @@ layout: default
 						<li>Assisting in hiring and onboarding new contractors</li>
 						<li>Collaboratom with team members in pair-programming sessions</li>
 						<li>Reviewing requirements and documenting technical specifications</li>
-						<li>Providing accurate complexity estimations</li>
-						<li>Contributing to the creation and maintenance of reusable UI libraries</li>
-						<li>Engaging in sprint planning meetings to define scope and objectives</li>
+						<li>Providing complexity estimations</li>
+						<li>Creating and maintaining reusable UI libraries</li>
 						<li>Developing new features for a whitelabel product</li>
-						<li>Conducting thorough code reviews to maintain high standards</li>
+						<li>Conducting code reviews to ensure high quality and standards</li>	
 						<li>Taking part in retrospective meetings to identify areas for improvement</li>
 					</ul>
 				</div>
-				<div class="desc">Stack:
+				<div class="stack">Stack:
 					<span class="tag">Typescript</span>
 					<span class="tag">Vue</span>
 					<span class="tag">Nuxt</span>
@@ -217,16 +226,16 @@ layout: default
 			<div class="item">
 				<div class="what">Senior Frontend Developer <span class="text-blue">@</span> No42 ltd.</div>
 				<div class="when">Zagreb, Croatia [2016 - 2017]</div>
-				<div class="desc">Developing websites with focus on implementing new technologies and improving the build process.</div>
+				<div class="desc">Developing websites for the tourism industry with focus on implementing new technologies and improving the build process.</div>
 				<div class="responsibilities">Responsibilities:
 					<ul>
 						<li>Providing time and complexity estimations</li>
 						<li>Developing frontends for presentational websites with an emphasis on performance and aesthetics</li>
 						<li>Mentoring junior team members</li>
-						<li>Conducting code reviews</li>
+						<li>Conducting code reviews to ensure high quality and standards</li>	
 					</ul>
 				</div>
-				<div class="desc">Stack:
+				<div class="stack">Stack:
 					<span class="tag">Javascript</span>
 					<span class="tag">Gulp</span>
 					<span class="tag">Preact</span>
@@ -239,11 +248,14 @@ layout: default
 			<div class="item">
 				<div class="what">Frontend Developer <span class="text-blue">@</span> Nivas ltd.</div>
 				<div class="when">Zagreb, Croatia [2013 - 2016]</div>
-				<div class="desc">Building and maintaining various websites using new technologies and approaches but keeping in mind the less obedient browsers and their limitations.</div>
-				<div class="desc">Stack:
+				<div class="desc">Building and maintaining various presentational websites with the focus on implementing smooth animations and accessible user interfaces.</div>
+				<div class="stack">Stack:
 					<span class="tag">HTML</span>
 					<span class="tag">CSS</span>
 					<span class="tag">Javascript</span>
+					<span class="tag">Gulp</span>
+					<span class="tag">Greensock</span>
+					<span class="tag">jQuery</span>
 					<span class="tag">PHP</span>
 				</div>
 			</div>
@@ -252,10 +264,11 @@ layout: default
 				<div class="what">Web developer <span class="text-blue">@</span> Krikstudio</div>
 				<div class="when">Zabreb, Croatia [2012]</div>
 				<div class="desc">Building and maintaining both static and Wordpress websites.</div>
-				<div class="desc">Stack:
+				<div class="stack">Stack:
 					<span class="tag">HTML</span>
 					<span class="tag">CSS</span>
 					<span class="tag">Javascript</span>
+					<span class="tag">jQuery</span>
 					<span class="tag">PHP</span>
 					<span class="tag">Wordpress</span>
 				</div>
@@ -265,7 +278,7 @@ layout: default
 				<div class="what">Web developer <span class="text-blue">@</span> Unicolor</div>
 				<div class="when">Zagreb, Croatia [2010 - 2011]</div>
 				<div class="desc">Building and maintaining websites built around a custom CMS.</div>
-				<div class="desc">Stack:
+				<div class="stack">Stack:
 					<span class="tag">HTML</span>
 					<span class="tag">CSS</span>
 					<span class="tag">PHP</span>

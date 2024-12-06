@@ -11,6 +11,7 @@
     }
 
     .pg-break {
+        margin: 0;
         page-break-after: always;
         visibility: hidden;
     }
@@ -38,9 +39,21 @@
             background: none;
             position: static;
             text-align: left;
-
-            .t .td {
+            
+            .flex {
+                flex-direction: row;
                 padding-bottom: 0;
+
+                > * {
+                    flex: 0;
+                    white-space: nowrap;
+                }
+            }
+
+            .smiley-wrapper {
+                padding: 0;
+                margin-right: 40px;
+                margin-bottom: 0;
             }
 
             .title{
@@ -51,12 +64,13 @@
             .subtitle {
                 font-family: $base-font-family;
                 color: $text-color;
+                margin: 8px 0;
                 opacity: 1;
             }
 
             .pages {
                 display: flex;
-                gap: 50px;
+                flex-direction: column;
                 color: $text-color;
 
                 a {
